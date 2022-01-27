@@ -122,6 +122,8 @@ const sobranniyObject = fasadGluhoy.build();
 
 console.log(JSON.stringify(sobranniyObject, null, 2));
 
+
+
 /**
  * Получаем объект фасада
  * 
@@ -188,6 +190,10 @@ console.log(JSON.stringify(sobranniyObject, null, 2));
   ]
 }
  */
+
+/** И на последок, выведем список нашей сохраненной номенклатуры */
+
+console.log(creator.nomenclatureNames());
 
 
 
