@@ -1,4 +1,4 @@
-import Engine from "yug-entity-system";
+import Engine, { EntityType } from "yug-entity-system";
 
 /**
  * Очень серозная документация.
@@ -57,6 +57,8 @@ Engine.on('on-component-error', ({component, componentName, propertyName, err}) 
 const creator = engine.nomenclatureCreator(); // Как и в прошлой версии, надо создать креатор.
 
 
+
+
  //Тепер с помощью метода крейт, в который мы передаем один из двух вариантов 'nomenclature' или 'component'
 
 /**
@@ -66,10 +68,10 @@ const creator = engine.nomenclatureCreator(); // Как и в прошлой в�
  */
 creator.create('Всякая аххинея' as any, 'И тут какую то ерунду' as any);
 
+
 /**
  * Смотрим в логи
  */
-
 
 const component = creator.create('component', 'geometry'); // автокомплит должен подсказать, какие аргументы можно ввести
 
