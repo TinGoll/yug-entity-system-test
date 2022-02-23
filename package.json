@@ -2,10 +2,10 @@
   "name": "yug-entity-system-test",
   "version": "1.0.0",
   "description": "Entity system testing",
-  "main": "dist/nomenclature.js",
+  "main": "dist/component_2.js",
   "scripts": {
-    "start": "node dist/nomenclature.js",
-    "dev": "nodemon src/nomenclature.ts",
+    "start": "node dist/component_2.js",
+    "dev": "nodemon src/component_2.ts",
     "versionup": "npm version patch",
     "build": "tsc -p ."
   },
@@ -27,6 +27,6 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "yug-entity-system": "^1.0.26"
+    "yug-entity-system": "^1.0.36"
   }
 }

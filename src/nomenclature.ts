@@ -1,4 +1,5 @@
-import Engine, { EntityType } from "yug-entity-system";
+import Engine, { EntityType, IGetable } from "yug-entity-system";
+import Entity from "yug-entity-system/dist/Models/entities/Entity";
 
 /**
  * Очень серозная документация.
@@ -34,7 +35,7 @@ creator.create('component', 'geometry')
   .setComponentDescription('Геометрия')
   .addProperty({ propertyName: 'height', propertyType: 'number', propertyDescription: 'Высота', propertyValue: '0' })
   .addProperty({ propertyName: 'width', propertyType: 'number', propertyDescription: 'Ширина', propertyValue: '0' })
-  .addProperty({ propertyName: 'depth', propertyType: 'number', propertyDescription: 'Толщина', propertyValue: '21', attributes: 'readonly;' })
+  .addProperty({ propertyName: 'depth', propertyType: 'number', propertyDescription: 'Толщина', propertyValue: '0', attributes: 'readonly;' })
   .addProperty({ propertyName: 'amount', propertyType: 'number', propertyDescription: 'Кол-во', propertyValue: '0' })
   .SaveAsTemplate() // сохраняем полученый компонент.
 
@@ -110,14 +111,5 @@ secondNomenclature.addComponent(creator.create('component', 'finishing').addProp
 /**
  * Можно собрать объект и отправить на сервер
  */
-
-console.log(firstNomenclature.build());
-
-
-
-
-
-
-
 
 
